@@ -1,0 +1,16 @@
+/*
+===============================================
+ STILER FOR SUMMARY-ITEM MARGIN
+===============================================
+
+Denne CSS-en justerer marginene på `.summary-item`-elementer 
+for å sikre konsistent avstand mellom elementene i en oppsummeringsseksjon.
+
+- `.sqs-block-summary-v2 .summary-item` fjerner standard margin nederst.
+- !important brukes for å overstyre eksisterende stiler som kan påvirke marginene.
+*/
+
+/* --- FJERNER MARGIN MELLOM SUMMARY-ELEMENTER --- */
+.sqs-block-summary-v2 .summary-item {
+    margin-bottom: 0% !important;
+}

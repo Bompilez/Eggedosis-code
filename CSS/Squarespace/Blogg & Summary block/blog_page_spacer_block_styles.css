@@ -1,0 +1,29 @@
+/*
+===============================================
+ STILER FOR MINIMUM HØYDE PÅ SPACER-BLOKKER
+===============================================
+
+Denne CSS-en justerer høyden på spacer-blokker for å sikre 
+at de ikke tar opp unødvendig plass i designet.
+
+- `.sqs-layout.sqs-editing .sqs-block, .sqs-block-spacer-content`
+  setter minimum høyde til 0px for å fjerne uønsket høyde.
+- `.sqs-block-spacer .sqs-block-content` fjerner høyde.
+- `.sqs-block-spacer` fjerner padding for å minimere plassbruk.
+*/
+
+/* --- FJERNER MINIMUMSHØYDE FRA SPACER-BLOKKER --- */
+.sqs-layout.sqs-editing .sqs-block, .sqs-block-spacer-content {
+    min-height: 0px !important;
+}
+
+/* --- FJERNER HØYDE FRA SPACER INNHOLD --- */
+.sqs-block-spacer .sqs-block-content {
+    height: 0;
+}
+
+/* --- FJERNER UNØDVENDIG PADDING FRA SPACER-BLOKKER --- */
+.sqs-block-spacer {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
