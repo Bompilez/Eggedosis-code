@@ -1,0 +1,62 @@
+/*
+===============================================
+ STILER FOR FONTER OG ANIMASJONER
+===============================================
+
+Denne CSS-en definerer tilpassede skrifttyper, animerte bakgrunner,
+justering av divider-bredde og spesialformatering av låste skjermbilder.
+
+- `@import url()` importerer en tilpasset skrifttype.
+- `font-family` setter enhetlig typografi på nettsiden.
+- `.summary-title-link` tilpasser fonter i oppsummeringsblokker.
+- `@keyframes fadeTextBackground` skaper en animasjonseffekt.
+- `.sqs-slice-group .sqs-slice` legger til en varslingsboks.
+- `.sqs-slide-wrapper` justerer bakgrunnsfarge og stil i låst skjermseksjon.
+*/
+
+/* --- IMPORTERER TILPASSET FONT --- */
+@import url('https://use.typekit.net/zid8bbb.css');
+
+/* --- STANDARD FONT FOR HELE SIDEN --- */
+body {
+    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+}
+
+a {
+    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+}
+
+
+/* --- ANIMERER BAKGRUNNSFARGE PÅ TEKST --- */
+@keyframes fadeTextBackground {
+    0% { background-color: rgba(255, 255, 255, 0); }
+    40% { background-color: #FDE383; }
+    60% { background-color: #FDE383; }
+    100% { background-color: rgba(255, 255, 255, 0); }
+}
+
+/* --- VARSLINGSBOKS OVER BILDER --- */
+.sqs-slice-group.group-copy .sqs-slice[data-slice-type="image"]::before {
+    content: "Undergoing Maintenance"; /* Tilpasset tekst */
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FDE383;
+    color: black;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 18px;
+    white-space: nowrap;
+    animation: fadeTextBackground 3s infinite ease-in-out;
+}
+
+/* --- FORMATERING AV TEKST I LÅST SKJERMSEKSJON --- */
+.sqs-slide-wrapper[data-slide-type="lock-screen"] .sqs-slice-group.group-copy [data-slice-type]:not([data-content-empty]) p {
+    background-color: black !important;
+    color: white !important;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
