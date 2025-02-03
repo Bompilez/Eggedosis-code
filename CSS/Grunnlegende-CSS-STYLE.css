@@ -1,0 +1,170 @@
+/* ====================================
+   CSS GUIDE - LÆRINGSFIL
+   ====================================
+
+   Dette er en læringsfil for CSS, hvor vi forklarer de viktigste konseptene.
+   Alle forklaringer er gitt som kommentarer i koden.
+*/
+
+/* ====================================
+   FARGER & BAKGRUNN
+   ==================================== */
+
+/* Tekstfarge */
+color: black;
+
+/* Bakgrunnsfarge */
+background-color: white;
+
+/* Bakgrunnsbilde */
+background-image: url('bilde.jpg');
+
+/* Størrelse på bakgrunnsbilde */
+background-size: cover; /* Også: contain, auto, px, % */
+
+/* Plassering av bakgrunnsbilde */
+background-position: center; /* Også: top, bottom, left, right, px, % */
+
+/* Gjentagelse av bakgrunnsbilde */
+background-repeat: no-repeat; /* Også: repeat, repeat-x, repeat-y */
+
+/* Opacity (gjennomsiktighet) */
+opacity: 0.8; /* 0 (fullstendig gjennomsiktig) til 1 (fullt synlig) */
+
+/* ====================================
+   TEKST & TYPOGRAFI
+   ==================================== */
+
+/* Skrifttype */
+font-family: Arial, sans-serif;
+
+/* Tekststørrelse */
+font-size: 16px; /* Også: em, rem, %, vw */
+
+/* Tykkelse på skrift */
+font-weight: bold; /* Også: normal, lighter, bolder, 100-900 */
+
+/* Skriftstil */
+font-style: italic; /* Også: normal, oblique */
+
+/* Justering av tekst */
+text-align: center; /* Også: left, right, justify */
+
+/* Endre bokstaver */
+text-transform: uppercase; /* Også: lowercase, capitalize */
+
+/* Avstand mellom bokstaver */
+letter-spacing: 1px;
+
+/* Linjehøyde */
+line-height: 1.5;
+
+/* Avstand mellom ord */
+word-spacing: 2px;
+
+/* Skygge på tekst */
+text-shadow: 2px 2px 5px gray;
+
+/* ====================================
+   MARGIN, PADDING & BORDER
+   ==================================== */
+
+/* Ytre avstand */
+margin: 20px;
+
+/* Indre avstand */
+padding: 10px;
+
+/* Ramme rundt element */
+border: 2px solid black;
+
+/* Runde hjørner */
+border-radius: 10px;
+
+/* Tykkelse på ramme */
+border-width: 2px;
+
+/* Type ramme */
+border-style: solid; /* Også: dashed, dotted, double */
+
+/* Farge på ramme */
+border-color: blue;
+
+/* Boksskygge */
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+/* ====================================
+   STØRRELSE & LAYOUT
+   ==================================== */
+
+/* Bredde på element */
+width: 100px; /* Også: %, em, vw */
+
+/* Høyde på element */
+height: 50px; /* Også: %, em, vh */
+
+/* Maksimal bredde */
+max-width: 500px;
+
+/* Minimum bredde */
+min-width: 200px;
+
+/* Maksimal høyde */
+max-height: 300px;
+
+/* Minimum høyde */
+min-height: 100px;
+
+/* ====================================
+   POSISJONERING & DISPLAY
+   ==================================== */
+
+/* Absolutt posisjonering */
+position: absolute;
+top: 50px;
+left: 100px;
+
+/* Fast posisjonering */
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+/* Relativ posisjonering */
+position: relative;
+top: 10px;
+
+/* Flexbox */
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* Grid */
+display: grid;
+grid-template-columns: 1fr 2fr;
+
+/* ====================================
+   OVERGANGER OG ANIMASJONER
+   ==================================== */
+
+/* Overgangseffekter */
+transition: all 0.3s ease-in-out;
+
+/* Enkel animasjon */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated-box {
+    animation: fade-in 2s ease-in-out;
+}
+
+/* ====================================
+   RESPONSIV DESIGN
+   ==================================== */
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+}
