@@ -1,0 +1,75 @@
+NYTTIG LENKER
+----------------------------------------
+
+
+Will Myers – CSS Ressurser & Inspirasjon
+----------------------------------------
+Lenke: https://www.will-myers.com
+
+Will Myers' nettside inneholder en rekke nyttige ressurser for webutviklere, 
+spesielt innen CSS og frontend-design. Her finner du artikler, kodeeksempler 
+og inspirasjon til hvordan du kan forbedre layout, animasjoner og stilsetting 
+i prosjektene dine. Nettsiden er spesielt verdifull for utviklere som ønsker 
+å utforske avanserte CSS-teknikker og moderne designprinsipper.
+
+
+Offisiell Squarespace Dokumentasjon
+-----------------------------------
+Lenke: https://support.squarespace.com
+
+Squarespaces offisielle hjelpesenter med guider om maler, design, 
+kodejusteringer og teknisk support. Perfekt for både nybegynnere og 
+avanserte brukere som ønsker å lære mer om plattformens muligheter.
+
+
+Squarespace Developer Platform
+------------------------------
+Lenke: https://developers.squarespace.com
+
+For utviklere som ønsker å bruke Custom Code, API-er og Developer Mode 
+for å lage avanserte Squarespace-nettsteder. Inneholder dokumentasjon 
+om hvordan du tilpasser Squarespace utover standardinnstillingene.
+
+
+Squarespace CSS & Code Snippets (Squarespace Answers)
+-----------------------------------------------------
+Lenke: https://www.squarespaceanswers.com
+
+En samling med nyttige CSS-snippets og kodejusteringer spesifikt for 
+Squarespace-design. Perfekt for å gjøre raske endringer uten å skrive 
+kode fra bunnen av.
+
+
+Squarespace Community Forum
+---------------------------
+Lenke: https://forum.squarespace.com
+
+Et fellesskap for Squarespace-brukere hvor du kan stille spørsmål, 
+finne løsninger på tekniske utfordringer og diskutere tilpasningsmuligheter 
+med andre designere og utviklere.
+
+
+Squarespace Circle (For Avanserte Brukere & Utviklere)
+------------------------------------------------------
+Lenke: https://circle.squarespace.com
+
+Et nettverk for profesjonelle Squarespace-designere og utviklere. 
+Gir tilgang til eksklusive ressurser, tidlig informasjon om nye funksjoner 
+og et fellesskap av eksperter.
+
+
+Ghost Plugins – Squarespace Custom Code
+---------------------------------------
+Lenke: https://ghostplugins.com
+
+En samling ferdige plugins og kodeutvidelser som gjør det enklere å tilpasse 
+Squarespace-nettsteder uten å måtte kode alt manuelt.
+
+
+Code & Quill – CSS og JavaScript for Squarespace
+------------------------------------------------
+Lenke: https://codeandquill.com/blogs/squarespace
+
+Artikler og praktiske eksempler på hvordan du kan bruke CSS og JavaScript 
+for å tilpasse Squarespace-design. Ideelt for utviklere som ønsker å 
+legge til mer interaktivitet og unike visuelle effekter.

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    Dette er HEAD-seksjonen av HTML-dokumentet.
+    Head inneholder metadata, tittel og eksterne ressurser som CSS eller skrifttyper.
+    -->
+    <title>HTML Guide - Læringsfil</title>
+</head>
+<body>
+    <!--
+    BODY-seksjonen inneholder alt innholdet på nettsiden.
+    Dette er der vi plasserer tekst, bilder, lenker, tabeller osv.
+    -->
+
+    <!-- Overskrifter: HTML har seks nivåer av overskrifter, fra h1 til h6. -->
+    <h1>Dette er en H1-overskrift</h1>
+    <h2>Dette er en H2-overskrift</h2>
+    <h3>Dette er en H3-overskrift</h3>
+
+    <!-- Avsnitt: Brukes for å organisere tekst. -->
+    <p>Dette er et avsnitt i HTML. Avsnitt gir struktur til teksten.</p>
+
+    <!-- Sterk og uthevet tekst -->
+    <p><strong>Denne teksten er viktig (strong).</strong></p>
+    <p><em>Denne teksten er uthevet (em).</em></p>
+
+    <!-- Lenker: href-attributtet spesifiserer måladressen. -->
+    <a href="https://www.google.com">Dette er en lenke til Google</a>
+
+    <!-- Bilder: img-taggen bruker src-attributtet til å angi bildekilden. -->
+    <img src="bilde.jpg" alt="Beskriv bildet her">
+
+    <!-- Lister -->
+    <ul>
+        <!-- uL = uordnet liste (punkter) -->
+        <li>Punkt 1</li>
+        <li>Punkt 2</li>
+    </ul>
+    
+    <ol>
+        <!-- oL = ordnet liste (nummerert) -->
+        <li>Første punkt</li>
+        <li>Andre punkt</li>
+    </ol>
+
+    <!-- Tabeller -->
+    <table border="1">
+        <tr>
+            <th>Navn</th>
+            <th>Alder</th>
+        </tr>
+        <tr>
+            <td>Ola</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <!-- DIV: En beholder som brukes til å gruppere innhold. -->
+    <div>
+        <h2>Denne delen ligger inni en div</h2>
+        <p>Div brukes ofte for layout og styling med CSS.</p>
+    </div>
+
+    <!-- Semantiske HTML-tagger -->
+    <header>
+        <!-- Header brukes til toppseksjonen av en nettside -->
+        <h1>Min nettside</h1>
+    </header>
+
+    <nav>
+        <!-- Nav brukes til navigasjon -->
+        <a href="#">Hjem</a>
+        <a href="#">Om oss</a>
+    </nav>
+
+    <section>
+        <!-- Section brukes til å dele opp innhold i seksjoner -->
+        <h2>En seksjon</h2>
+        <p>Dette er en seksjon i HTML.</p>
+    </section>
+
+    <article>
+        <!-- Article brukes for uavhengige artikler eller blogginnlegg -->
+        <h2>En artikkel</h2>
+        <p>Dette er en artikkel i HTML.</p>
+    </article>
+
+    <aside>
+        <!-- Aside brukes for relatert innhold, ofte i en sidekolonne -->
+        <p>Dette er en aside med relatert informasjon.</p>
+    </aside>
+
+    <footer>
+        <!-- Footer brukes for bunnteksten på en nettside -->
+        <p>Copyright 2025</p>
+    </footer>
+
+    <!-- Skjemaer (Forms) for brukerinput -->
+    <form action="send.php" method="POST">
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn">
+        <button type="submit">Send inn</button>
+    </form>
+
+    <!-- JavaScript i HTML -->
+    <script>
+        function siHei() {
+            alert("Hei, velkommen til HTML-guiden!");
+        }
+    </script>
+    <button onclick="siHei()">Klikk meg</button>
+</body>
+</html>

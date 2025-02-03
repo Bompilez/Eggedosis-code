@@ -1,0 +1,147 @@
+/* ====================================
+   CSS GUIDE - LÆRINGSFIL
+   ====================================
+
+   Dette er en læringsfil for CSS, hvor vi forklarer de viktigste konseptene.
+   Alle forklaringer er gitt som kommentarer i koden.
+*/
+
+/* Grunnleggende CSS-syntaks */
+selector {
+    property: value; /* Egenskap og verdi */
+}
+
+/* Eksempel: Endre fargen på all tekst i body */
+body {
+    color: black; /* Setter tekstfarge til svart */
+    background-color: white; /* Setter bakgrunnsfarge til hvit */
+}
+
+/* ====================================
+   CSS-SELECTORER
+   ==================================== */
+
+/* ID-selector: Bruker # foran ID-en */
+#min-id {
+    color: blue;
+}
+
+/* Klasse-selector: Bruker . foran klassenavnet */
+.min-klasse {
+    font-size: 18px;
+}
+
+/* Element-selector: Påvirker alle elementer av samme type */
+p {
+    line-height: 1.5;
+}
+
+/* ====================================
+   BOX MODEL (Margin, Padding, Border)
+   ==================================== */
+
+/* Box-modellen definerer hvordan avstand og størrelse fungerer i CSS */
+div {
+    width: 200px;
+    height: 100px;
+    padding: 10px; /* Indre avstand */
+    margin: 20px; /* Ytre avstand */
+    border: 2px solid black; /* Ramme rundt elementet */
+    border-radius: 10px; /* Runde hjørner */
+}
+
+/* ====================================
+   DISPLAY: BLOCK & INLINE-BLOCK
+   ==================================== */
+
+/* Block-elementer tar opp hele bredden og starter på ny linje */
+.block-element {
+    display: block;
+    width: 100%;
+}
+
+/* Inline-block-elementer oppfører seg som inline-elementer, men lar deg endre størrelse */
+.inline-block-element {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: lightblue;
+}
+
+/* ====================================
+   FLEXBOX
+   ==================================== */
+
+/* Flexbox er en layout-teknikk for å organisere elementer */
+.container {
+    display: flex; /* Aktiverer flexbox */
+    justify-content: center; /* Sentrerer innhold horisontalt */
+    align-items: center; /* Sentrerer innhold vertikalt */
+}
+
+/* ====================================
+   GRID LAYOUT
+   ==================================== */
+
+/* CSS Grid er et kraftig layout-verktøy */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Lager to like kolonner */
+    gap: 10px; /* Avstand mellom elementene */
+}
+
+/* ====================================
+   RESPONSIV DESIGN
+   ==================================== */
+
+/* Media queries gjør at nettsider tilpasser seg ulike skjermstørrelser */
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+}
+
+/* ====================================
+   ENHETSTYPER: px, %, fr, em, rem
+   ==================================== */
+
+/* px - Faste piksler */
+.pixel-box {
+    width: 200px;
+    height: 100px;
+}
+
+/* % - Prosentandel av foreldreelementets størrelse */
+.percentage-box {
+    width: 50%;
+}
+
+/* fr - Grid-fraksjoner */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Første kolonne tar 1 del, andre tar 2 deler */
+}
+
+/* em - Relativ til elementets font-størrelse */
+.em-box {
+    font-size: 1.5em; /* 1.5 ganger større enn foreldreelementet */
+}
+
+/* rem - Relativ til rot-fontstørrelsen */
+.rem-box {
+    font-size: 2rem; /* 2 ganger større enn standardfonten i dokumentet */
+}
+
+/* ====================================
+   ANIMASJONER
+   ==================================== */
+
+/* CSS kan brukes til å lage enkle animasjoner */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated-box {
+    animation: fade-in 2s ease-in-out;
+}

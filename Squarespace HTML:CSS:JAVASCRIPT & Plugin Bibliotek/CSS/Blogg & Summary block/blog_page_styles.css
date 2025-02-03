@@ -1,0 +1,27 @@
+/*
+===============================================
+ STILER FOR BLOGGSIDE BREDDE
+===============================================
+
+Denne CSS-en justerer bredden på bloggseksjonen for å sikre
+at den holder seg innenfor sidens breddegrenser.
+
+- `.tweak-blog-basic-grid-width-inset .blog-basic-grid`
+  fjerner padding i fullskjermvisning.
+- @media (max-width: 767px) legger til padding for små skjermer
+  for bedre responsivitet.
+*/
+
+/* --- BLOGGSIDE HOLDER SIDEBREDDE --- */
+.tweak-blog-basic-grid-width-inset .blog-basic-grid {
+    padding-left: 0vw;
+    padding-right: 0vw;
+}
+
+/* --- RESPONSIV TILPASNING FOR MOBILER --- */
+@media (max-width: 767px) {
+  .tweak-blog-basic-grid-width-inset .blog-basic-grid {
+    padding-left: 6.5vw; /* Legg til padding for mobiler */
+    padding-right: 6.5vw;
+  }
+}

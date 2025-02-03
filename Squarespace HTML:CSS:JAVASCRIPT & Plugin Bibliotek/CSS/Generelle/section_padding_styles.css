@@ -1,0 +1,25 @@
+/*
+===============================================
+ STILER FOR SEKSJONSPADDING
+===============================================
+
+Denne CSS-en definerer padding-regler for seksjoner, både generelt og spesifikt for mobilvisning.
+
+- `@media screen and (max-width: 767px)` justerer padding for mobilbrukere.
+- `.page-section` sikrer at seksjoner har jevn padding på små skjermer.
+- `.sqs-block-summary-v2 .summary-item` fjerner ekstra margin for konsistent spacing.
+*/
+
+/* --- MOBIL PADDING --- */
+@media screen and (max-width: 767px) {
+    .page-section {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  /* --- PADDING FOR ALLE SEKSJONER --- */
+  .sqs-block-summary-v2 .summary-item {
+    margin-bottom: 0% !important;
+  }
+  

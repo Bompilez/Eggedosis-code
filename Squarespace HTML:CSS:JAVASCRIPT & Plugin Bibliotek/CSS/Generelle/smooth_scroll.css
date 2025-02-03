@@ -1,0 +1,23 @@
+/*
+===============================================
+ SMOOTH SCROLL OG ANKERJUSTERING
+===============================================
+
+Denne CSS-en definerer regler for jevn scrolling og justering
+av ankerpunktets margin for en bedre brukeropplevelse.
+
+- `html { scroll-behavior: smooth; }` gjør at nettsiden scroller mykt
+  når man navigerer til interne ankerlenker.
+- `.anchor-link { scroll-margin: 50px; }` sikrer at innholdet ikke blir
+  skjult bak faste elementer (f.eks. sticky headers) ved scrolling.
+*/
+
+/* Aktiverer smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Justerer scroll-margin for ankerlenker */
+  .anchor-link {
+    scroll-margin: 50px;
+  }

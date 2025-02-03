@@ -1,0 +1,17 @@
+/*
+===============================================
+ SKJULER SPESIFIKK SEKSJON I REDIGERINGSMODUS
+===============================================
+
+Denne CSS-regelen skjuler en spesifikk seksjon på nettsiden når 
+Squarespace er i redigeringsmodus.
+
+- `body.sqs-edit-mode-active` sørger for at regelen kun gjelder i redigeringsmodus.
+- `section[data-section-id="67920b0428c682785ffc0b48"]` velger seksjonen basert på `data-section-id`.
+- `display: none;` fjerner seksjonen fra visningen.
+
+*/
+
+body.sqs-edit-mode-active section[data-section-id="67920b0428c682785ffc0b48"] {
+    display: none;
+  }

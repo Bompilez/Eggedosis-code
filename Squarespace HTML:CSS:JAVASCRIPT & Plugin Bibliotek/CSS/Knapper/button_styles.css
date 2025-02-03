@@ -1,0 +1,52 @@
+/*
+===============================================
+ STILER FOR KNAPPER
+===============================================
+
+Denne CSS-en definerer stilregler for knapper, inkludert standardutseende,
+hover-effekter og animerte fargeoverganger.
+
+- `a[class*="sqs-button-element"]` sikrer at knapper alltid er fullt synlige.
+- `.sqs-block-button-element` definerer standardutseendet på knapper.
+- `@keyframes backgroundFadeIn` og `@keyframes backgroundFadeOut`
+  håndterer overgangen mellom bakgrunnsfarger.
+*/
+
+/* Sikrer at knapper er fullt synlige */
+a[class*="sqs-button-element"] {
+    opacity: 1 !important;
+}
+
+/* --- STANDARD UTSEENDE FOR KNAPPEN --- */
+.sqs-block-button-element {
+  background-color: #d33c12; /* Startfarge */
+  color: #fff; /* Tekstfarge */
+  padding: 10px 20px;
+  border-radius: 30px;
+  animation: backgroundFadeOut 0.5s forwards ease; /* Initierer fade-out */
+}
+
+/* --- HOVER-EFFEKT FOR KNAPP --- */
+.sqs-block-button-element:hover {
+  animation: backgroundFadeIn 0.5s forwards ease; /* Initierer fade-in ved hover */
+}
+
+/* --- ANIMASJON FOR Å TONE INN BAKGRUNNSFARGE --- */
+@keyframes backgroundFadeIn {
+  0% {
+    background-color: #d33c12;
+  }
+  100% {
+    background-color: #390702; /* Sluttfarge ved hover */
+  }
+}
+
+/* --- ANIMASJON FOR Å TONE UT TILBAKE TIL ORIGINAL FARGE --- */
+@keyframes backgroundFadeOut {
+  0% {
+    background-color: #390702; /* Fargen ved hover */
+  }
+  100% {
+    background-color: #d33c12; /* Tilbake til original farge */
+  }
+}

@@ -1,0 +1,27 @@
+/*
+===============================================
+ STILER FOR DIVIDERE
+===============================================
+
+Denne CSS-en definerer generelle regler for dividers og spesifikke
+justeringer for seksjonsdelere, bortsett fra en spesifikk seksjon.
+
+- `.divider` styrer generelle regler for alle dividers.
+- `.section-divider-display:not(section[data-section-id="6784c9570a25bd2e75c0c457"] .section-divider-display)`
+  justerer bredde og margin for seksjonsdelere, unntatt den angitte seksjonen.
+*/
+
+/* Generelle regler for alle dividers */
+.divider {
+    width: auto; /* Setter bredden til å tilpasse seg innholdet */
+    max-width: 100%; /* Begrens til ikke å overstige 100% av foreldreelementets bredde */
+    margin: 0 auto; /* Sentrer divideren horisontalt */
+}
+
+/* For alle section-dividers, unntatt den spesifikke seksjonen */
+.section-divider-display:not(section[data-section-id="6784c9570a25bd2e75c0c457"] .section-divider-display) {
+    width: 100%; /* Sett bredden til å fylle foreldrelementet */
+    max-width: 1109px; /* Begrens maksimal bredde */
+    border-top: 0px solid black; /* Setter en horisontal linje på bunnen */
+    margin: 0 auto; /* Sentrerer divideren horisontalt */
+}

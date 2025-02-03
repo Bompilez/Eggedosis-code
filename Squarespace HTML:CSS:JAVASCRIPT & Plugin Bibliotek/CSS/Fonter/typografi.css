@@ -1,0 +1,86 @@
+/*
+===============================================
+ TYPOGRAFI OG FONTER
+===============================================
+
+Denne CSS-en definerer fonter og typografi for nettsiden.
+
+- `@import` henter den eksterne fonten fra Adobe Typekit.
+- `body` og `a` bruker `neue-haas-grotesk-display` som standardfont.
+- H1–H6 og P har egne stildefinisjoner for enhetlig typografi.
+- Legger til stil for listeelementer (ul, ol) for bedre lesbarhet.
+*/
+
+/* --- IMPORTER FONTER --- */
+@import url('https://use.typekit.net/zid8bbb.css');
+
+/* --- STANDARD FONTER FOR TEKST --- */
+body {
+    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+}
+
+a {
+    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- OVERSKRIFTSSTILER --- */
+h1 {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+h3 {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+h4 {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+h5 {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+h6 {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* --- AVSNITTSTIL --- */
+p {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* --- LISTESTILER --- */
+ul, ol {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+    padding-left: 20px;
+}

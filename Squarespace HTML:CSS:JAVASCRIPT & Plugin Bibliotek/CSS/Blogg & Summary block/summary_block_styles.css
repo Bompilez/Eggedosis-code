@@ -1,0 +1,105 @@
+/*
+===============================================
+ STILER FOR SUMMARY BLOCK
+===============================================
+
+Denne CSS-en definerer stilregler for Summary Blocks, inkludert 
+metadata-visning, layout, bilde- og tekstdesign samt knappestiler.
+
+- Skjuler `summary-metadata--primary`.
+- Setter enhetlig høyde for Summary Blocks i et rutenett.
+- Definerer bakgrunn, skygge og radius for Summary Blocks.
+- Justerer padding, margin og plassering av knapper.
+- Legger til en hover-effekt på "Read More"-knappen.
+*/
+
+/* --- SKJULER SUMMARY METADATA --- */
+.summary-metadata.summary-metadata--primary {
+    display: none !important;
+  }
+  
+  /* --- ENSARTET HØYDE PÅ SUMMARY BLOCKS --- */
+  .sqs-gallery-design-autogrid .summary-item-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sqs-gallery-design-autogrid .summary-item {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  
+  /* --- DESIGN FOR SUMMARY BLOCK --- */
+  .sqs-gallery-design-autocolumns-slide, 
+  .sqs-gallery-design-autogrid-slide {
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0px 0px 15px rgba(100, 100, 100, 0.1) !important;
+  }
+  
+  /* --- BILDE-RADIUS I SUMMARY BLOCK --- */
+  .sqs-gallery-design-autocolumns-slide img, 
+  .sqs-gallery-design-autogrid-slide .summary-thumbnail {
+    border-radius: 0px !important;
+  }
+  
+  /* --- STIL FOR SUMMARY TITTEL --- */
+  .summary-title-link {
+    font-weight: 500;
+  }
+  
+  /* --- MARGIN FOR SUMMARY BIO TEKST --- */
+  .summary-excerpt {
+    margin-bottom: 40px !important;
+  }
+  
+  /* --- PADDING FOR SUMMARY INNHOLD --- */
+  .sqs-gallery-design-autocolumns-slide .summary-content, 
+  .sqs-gallery-design-autogrid-slide .summary-content {
+    padding: 20px 40px;
+    height: 100%;
+  }
+  
+  /* --- JUSTERING AV "READ MORE"-KNAPP --- */
+  .summary-content {
+    display: flex;
+    flex-direction: column !important;
+    flex: 1;
+  }
+  .summary-read-more-link {
+    margin-top: auto !important;
+  }
+  
+  /* --- DESIGN FOR "READ MORE"-KNAPP --- */
+  .sqs-gallery-design-autocolumns-slide .summary-read-more-link, 
+  .sqs-gallery-design-autogrid-slide .summary-read-more-link {
+    display: inline-block;
+    color: #fff;
+    background-color: #d33c12;
+    text-align: center;
+    width: 50%;
+    padding: 7px 10px;
+    border-radius: 30px;
+    transition: opacity 0.3s, background-color 0.5s;
+  }
+  
+  /* --- HOVER-EFFEKT FOR "READ MORE"-KNAPP --- */
+  .sqs-gallery-design-autocolumns-slide .summary-read-more-link:hover, 
+  .sqs-gallery-design-autogrid-slide .summary-read-more-link:hover {
+    background-color: #390702 !important;
+  }
+  
+  /* --- KATEGORITEKST I SUMMARY BLOCK --- */
+  .summary-metadata-item-summary-metadata-item--cats {
+    display: flex;
+    bottom: 0 !important;
+  }
+  
+  /* --- JUSTERING AV METADATA OG KNAPPER --- */
+  .summary-metadata {
+    display: flex !important;
+    flex: 1 !important;
+    flex-direction: column !important;
+    margin-top: auto !important;
+  }
+  
